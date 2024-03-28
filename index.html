@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="from-group">
+      <h4>Bài 1: tính tiền lương nhân viên</h4>
+      <div class="from-group">
+        <p>Tiền lương 1 ngày làm</p>
+        <input id="tienLuong1Ngay" class="from-control w-25" />
+      </div>
+      <br />
+      <div class="from-group">
+        <p>Số ngày làm</p>
+        <input id="soNgayLam" class="from-control w-25" />
+      </div>
+      <br />
+      <button
+        onclick="tinhTienLuong()"
+        class="btn btn-success"
+        id="btnTienLuong"
+      >
+        Tính tiền lương
+      </button>
+      <div class="mt-2 alert alert-success">
+        Kết quả : <span id="tongLuong"></span>
+      </div>
+    </div>
+
+    <div class="from-group mt-5">
+      <h4>Bài 2: tính giá trị trung bình của 5 số thực</h4>
+      <div class="from-group">
+        <p>số thực 1</p>
+        <input id="num1" class="from-control w-25" />
+      </div>
+      <br />
+      <div class="from-group">
+        <p>Số thực 2</p>
+        <input id="num2" class="from-control w-25" />
+      </div>
+      <br />
+      <div class="from-group">
+        <p>Số thực 3</p>
+        <input id="num3" class="from-control w-25" />
+      </div>
+      <br />
+      <div class="from-group">
+        <p>Số thực 4</p>
+        <input id="num4" class="from-control w-25" />
+      </div>
+      <br />
+      <div class="from-group">
+        <p>Số thực 5</p>
+        <input id="num5" class="from-control w-25" />
+      </div>
+      <br />
+      <button onclick="tongTrungBinh()" class="btn btn-success">
+        Tính tiền lương
+      </button>
+      <div class="mt-2 alert alert-success">
+        Kết quả : <span id="giaTriTrungBinh"></span>
+      </div>
+    </div>
+
+    <div class="from-group mt-5">
+      <h4>Bài 3: Quy đổi tiền</h4>
+      <div class="from-group">
+        <p>Số tiền USD người dùng nhập</p>
+        <input id="soTienUSD" class="from-control w-25" />
+      </div>
+      <br />
+
+      <br />
+      <button onclick="doiTien()" class="btn btn-success">
+        Tiền quy đổi sang VND
+      </button>
+      <div class="mt-2 alert alert-success">
+        Kết quả : <span id="tongTienQuyDoi"></span>
+      </div>
+    </div>
+
+    <div class="from-group mt-5">
+      <h4>Bài 4: tính chiều dài và chiều rộng HCN</h4>
+      <div class="from-group">
+        <p>Chiều Dài</p>
+        <input id="chieuDai" class="from-control w-25" />
+      </div>
+      <br />
+      <div class="from-group">
+        <p>Chiều rộng</p>
+        <input id="chieuRong" class="from-control w-25" />
+      </div>
+      <br />
+      <button onclick="tinhChuVi()" class="btn btn-success">Tính chu vi</button>
+      <button onclick="tinhDienTich()" class="btn btn-success">
+        Tính diện tích
+      </button>
+      <div class="mt-2 alert alert-success">
+        Kết quả : <span id="daiHoacRong"></span>
+      </div>
+
+      <div id="result"></div>
+    </div>
+
+    <div class="from-group mt-5">
+      <h4>Bài 5: tính tổng 2 ký số</h4>
+      <div class="from-group">
+        <p>Số nhập 2 chữ số</p>
+        <input id="soNhap" class="from-control w-25" />
+      </div>
+
+      <br />
+      <button onclick="tinhTong()" class="btn btn-success">
+        Tính tổng ký số
+      </button>
+      <div class="mt-2 alert alert-success">
+        Kết quả : <span id="tongSo"></span>
+      </div>
+    </div>
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+      integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
